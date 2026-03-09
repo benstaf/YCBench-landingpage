@@ -27,11 +27,11 @@ import {
 } from "@/components/ui/card";
 import {
   Table,
-  Body as TableBody,
-  Cell as TableCell,
-  Head as TableHead,
-  Header as TableHeader,
-  Row as TableRow,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
 } from "@/components/ui/table";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer, ReferenceLine } from "recharts";
 
