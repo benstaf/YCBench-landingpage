@@ -1,0 +1,194 @@
+Build a high-converting lead gen landing page equipped with primary CTA and lead capture form.
+The product is YC Bench, a live benchmark for predicting short-term outperformance of Y Combinator startups within their batch cohorts.
+The platform evaluates predictive models every 90 days using peer-relative momentum signals such as:
+hiring growth
+funding events
+product traction
+web traffic
+visibility signals
+The goal of the landing page is to capture emails from researchers, investors, founders, and builders interested in startup prediction and YC data, and invite them to join early.
+The page should feel like a credible YC ecosystem product combined with a modern AI research benchmark.
+Avoid marketing fluff. Emphasize:
+clarity
+quantitative rigor
+experimentation
+YC ecosystem relevance
+
+Design Style
+Use a Y Combinator–inspired design aesthetic.
+Primary accent color:
+YC Orange — #FF6600
+Use orange for:
+CTA buttons
+links
+icons
+highlights
+leaderboard accents
+General style:
+clean white or light background
+large modern sans-serif typography
+generous whitespace
+simple card layouts
+subtle shadows
+minimal animations
+strong visual hierarchy
+The page should look like a YC startup launch page + AI benchmark website.
+
+Navbar
+Add a sticky minimal navigation bar.
+Left side:
+Orange square logo with rounded corners.
+White text inside:
+YC
+Next to it:
+YC Bench
+Right side navigation links:
+How it Works
+Leaderboard
+Protocol
+Join
+Final navigation item:
+Orange CTA button:
+Join the Benchmark
+Navbar should remain visible while scrolling.
+
+Page Layout
+1. Hero Section (Above the Fold)
+Small label above headline:
+Live Benchmark - Startup Velocity 
+Headline:
+Predict the Next YC Outperformers
+Subheadline:
+YC Bench is a live benchmark evaluating models that predict which Y Combinator startups will outperform their batch peers over the next 90 days.
+Primary CTA button (orange):
+Join the Benchmark
+Lead capture form fields:
+Email
+Optional role selector
+Researcher
+Investor
+Founder
+Builder
+CTA button:
+Get Early Access
+Credibility line:
+Live evaluation • Cohort-relative signals • Fast iteration
+
+2. YC Credibility Strip
+Add a thin trust strip below the hero.
+Example text:
+Built around Y Combinator batch cohorts • Cohort-relative benchmarking • Fast evaluation cycles
+Keep this subtle and minimal.
+
+3. Live Leaderboard Preview
+Show a clean benchmark leaderboard.
+Example table:
+Model | Top-Decile Precision | Rank Correlation | Reward CaptureVelocityNet v1 | 0.62 | 0.41 | +0.85σBatchRanker | 0.58 | 0.36 | +0.71σYCbench Baseline | 0.50 | 0.29 | +0.55σ
+Title:
+Live Benchmark Leaderboard
+Caption:
+Leaderboard updates every evaluation cycle (90 days)
+Highlight top row with orange accents.
+
+4. Batch Outperformer Radar
+This section should be visual and shareable.
+Title:
+Batch Outperformer Radar
+Example display:
+Top Predicted Outperformers — W26 Batch
+Company A ▲ Velocity +1.8σ
+Company B ▲ Velocity +1.5σ
+Company C ▲ Velocity +1.3σ
+Company D ▲ Velocity +1.2σ
+Company E ▲ Velocity +1.1σ
+Caption:
+Updated every evaluation cycle (90 days)
+Add a Share Radar button that generates a simple share card.
+
+5. The Core Insight
+Explain the key idea clearly.
+Predicting startup success normally takes years.
+YC Bench makes it measurable in months.
+Because Y Combinator startups launch in synchronized batches, they form natural peer cohorts. This allows models to measure relative execution and short-term outperformance, instead of waiting for distant outcomes like unicorns or exits.
+
+6. How It Works
+Simple 3-step visual flow.
+Step 1 Models predict which YC startups will outperform their batch peers in terms of velocity signals
+Step 2 Short-term velocity signals are measured over the next 90 days.
+Step 3 Predictions are evaluated and ranked on a live leaderboard.
+Use visual cards with icons.
+
+7. Evaluation Metrics
+Display metrics in cards.
+Top-Decile Precision How often predicted leaders actually outperform their cohort.
+Rank Correlation Alignment between predicted and actual ranking.
+Reward Capture Average velocity achieved by top predictions relative to the batch median.
+
+8. Why YC Data Works
+Show bullet points:
+Batch-based cohorts
+Shared time zero
+Comparable funding environments
+Large synchronized startup groups
+This structure enables low-noise relative benchmarking.
+
+9. Benchmark Protocol
+Title:
+Benchmark Protocol
+Explain briefly:
+Predictions are frozen at evaluation time
+Velocity is measured over the next 90 days
+Startups are ranked relative to their YC batch peers
+Model performance is computed using standardized velocity metrics
+Leaderboards update every evaluation cycle
+This ensures fair, transparent, and reproducible evaluation.
+
+10. Batch Momentum Chart
+Add a chart visualizing:
+Predicted vs Actual Velocity 
+Example:
+X-axis: time Y-axis: normalized velocity score
+Highlight predicted outperformers using orange.
+
+11. Use Cases
+Show three cards.
+Researchers Study predictive signals in startup ecosystems.
+Investors Identify emerging YC outliers early.
+Founders Benchmark company velocity relative to batch peers.
+
+12. YC Bench Roadmap
+Simple timeline.
+Phase 1 Data aggregation
+Phase 2 First benchmark release
+Phase 3 Live model leaderboard
+Phase 4 Open model submissions
+
+13. Final Conversion Section
+Headline:
+Join the YC Bench Early Access
+Subtext:
+Be notified when the live benchmark and leaderboard launch.
+Lead capture form:
+Email
+Role selector
+CTA button (orange):
+Get Early Access
+
+Technical Requirements
+Use:
+React + Tailwind CSS
+Implementation requirements:
+component-based architecture
+reusable section components
+responsive mobile layout
+smooth scrolling
+subtle animations
+working lead capture form
+backend endpoint or simple database to store leads
+optimized performance and fast load time
+
+Final Goal
+The final page should feel like a credible AI benchmark launch page built for the YC ecosystem, combining:
+YC startup aesthetic
+modern ML benchmark design
+strong lead generation conversion.
