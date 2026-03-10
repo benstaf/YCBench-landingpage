@@ -11,7 +11,8 @@ import {
   Users, 
   BarChart3, 
   Search,
-  Rocket
+  Rocket,
+  Mail
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -78,8 +79,8 @@ export default function Home() {
       <nav className={`fixed top-0 w-full z-50 transition-all duration-200 border-b ${isScrolled ? "bg-white/80 backdrop-blur-md border-border" : "bg-transparent border-transparent"}`}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="bg-[#FF6600] text-white font-black text-xl rounded flex items-center justify-center w-10 h-10 select-none" style={{ fontFamily: '"Oswald", sans-serif', letterSpacing: '-0.05em' }}>
-              YC
+            <div className="bg-[#FF6600] text-white font-bold text-[28px] rounded flex items-center justify-center w-10 h-10 select-none pb-0.5" style={{ fontFamily: '"Arimo", sans-serif', letterSpacing: '-0.02em' }}>
+              Y
             </div>
             <span className="font-semibold text-lg tracking-tight">Bench</span>
           </div>
@@ -543,19 +544,31 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Address and Map Section */}
+        {/* Contact Us Section */}
         <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto border-t border-border">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Location</h3>
-              <div className="flex items-start gap-4 text-muted-foreground text-lg mb-8">
-                <Target className="w-6 h-6 text-primary shrink-0 mt-1" />
-                <address className="not-italic">
-                  YC Bench<br />
-                  548 Market St PMB 41382<br />
-                  San Francisco, CA 94104<br />
-                  USA
-                </address>
+              <h3 className="text-3xl font-bold mb-8">Contact Us</h3>
+              <div className="space-y-8">
+                <div className="flex items-start gap-4 text-muted-foreground text-lg">
+                  <Mail className="w-6 h-6 text-primary shrink-0 mt-1" />
+                  <div>
+                    <div className="font-semibold text-foreground mb-1">Email</div>
+                    <a href="mailto:info@ycbench.com" className="hover:text-primary transition-colors">info@ycbench.com</a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 text-muted-foreground text-lg">
+                  <Target className="w-6 h-6 text-primary shrink-0 mt-1" />
+                  <div>
+                    <div className="font-semibold text-foreground mb-1">Address</div>
+                    <address className="not-italic">
+                      YC Bench<br />
+                      548 Market St PMB 41382<br />
+                      San Francisco, CA 94104<br />
+                      USA
+                    </address>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="w-full h-[400px] rounded-2xl overflow-hidden border border-border shadow-md">
@@ -576,8 +589,8 @@ export default function Home() {
       <footer className="bg-background border-t border-border py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <div className="bg-[#FF6600] text-white font-black text-sm rounded flex items-center justify-center w-8 h-8 select-none" style={{ fontFamily: '"Oswald", sans-serif', letterSpacing: '-0.05em' }}>
-              YC
+            <div className="bg-[#FF6600] text-white font-bold text-[22px] rounded flex items-center justify-center w-8 h-8 select-none pb-0.5" style={{ fontFamily: '"Arimo", sans-serif', letterSpacing: '-0.02em' }}>
+              Y
             </div>
             <span className="font-semibold text-lg tracking-tight">Bench</span>
           </div>
