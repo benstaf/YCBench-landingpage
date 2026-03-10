@@ -73,15 +73,15 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-white selection:bg-primary/20 selection:text-primary">
+    <div className="min-h-screen bg-background selection:bg-primary/20 selection:text-primary">
       {/* Navigation */}
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-200 border-b ${isScrolled ? "bg-white/80 backdrop-blur-md border-border" : "bg-white border-transparent"}`}>
+      <nav className={`fixed top-0 w-full z-50 transition-all duration-200 border-b ${isScrolled ? "bg-white/80 backdrop-blur-md border-border" : "bg-transparent border-transparent"}`}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="bg-primary text-white font-bold text-lg rounded flex items-center justify-center w-10 h-10">
+            <div className="bg-[#FF6600] text-white font-black text-xl rounded flex items-center justify-center w-10 h-10 select-none" style={{ fontFamily: '"Oswald", sans-serif', letterSpacing: '-0.05em' }}>
               YC
             </div>
-            <span className="font-semibold text-lg tracking-tight">YC Bench</span>
+            <span className="font-semibold text-lg tracking-tight">Bench</span>
           </div>
           
           <div className="hidden md:flex items-center gap-8">
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="pt-24 pb-20">
+      <main className="pt-24 pb-0">
         {/* 1. Hero Section */}
         <section className="px-4 sm:px-6 lg:px-8 pt-16 pb-12 max-w-6xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/50 text-primary text-sm font-medium mb-8">
@@ -542,15 +542,44 @@ export default function Home() {
             </form>
           </div>
         </section>
+
+        {/* Address and Map Section */}
+        <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto border-t border-border">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-bold mb-6">Location</h3>
+              <div className="flex items-start gap-4 text-muted-foreground text-lg mb-8">
+                <Target className="w-6 h-6 text-primary shrink-0 mt-1" />
+                <address className="not-italic">
+                  YC Bench<br />
+                  548 Market St PMB 41382<br />
+                  San Francisco, CA 94104<br />
+                  USA
+                </address>
+              </div>
+            </div>
+            <div className="w-full h-[400px] rounded-2xl overflow-hidden border border-border shadow-md">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0336215160846!2d-122.4018898!3d37.7891283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b8b30531f%3A0x6a0f4435987a049d!2s548%20Market%20St%20%2341382%2C%20San%20Francisco%2C%20CA%2094104!5e0!3m2!1sen!2sus!4v1709999999999!5m2!1sen!2sus" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer className="bg-white border-t border-border py-12">
+      <footer className="bg-background border-t border-border py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <div className="bg-primary text-white font-bold text-sm rounded flex items-center justify-center w-8 h-8">
+            <div className="bg-[#FF6600] text-white font-black text-sm rounded flex items-center justify-center w-8 h-8 select-none" style={{ fontFamily: '"Oswald", sans-serif', letterSpacing: '-0.05em' }}>
               YC
             </div>
-            <span className="font-semibold text-lg tracking-tight">YC Bench</span>
+            <span className="font-semibold text-lg tracking-tight">Bench</span>
           </div>
           <p className="text-sm text-muted-foreground">
             A live benchmark for evaluating predictive models. Not affiliated with Y Combinator.
