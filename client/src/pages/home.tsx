@@ -79,8 +79,8 @@ export default function Home() {
       <nav className={`fixed top-0 w-full z-50 transition-all duration-200 border-b ${isScrolled ? "bg-white/80 backdrop-blur-md border-border" : "bg-transparent border-transparent"}`}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="bg-[#FF6600] text-white font-bold text-[28px] rounded flex items-center justify-center w-10 h-10 select-none pb-0.5" style={{ fontFamily: '"Arimo", sans-serif', letterSpacing: '-0.02em' }}>
-              Y
+            <div className="bg-[#FF6600] text-white font-bold text-[24px] rounded flex items-center justify-center w-10 h-10 select-none pb-0.5" style={{ fontFamily: '"Arimo", sans-serif', letterSpacing: '-0.05em' }}>
+              YC
             </div>
             <span className="font-semibold text-lg tracking-tight">Bench</span>
           </div>
@@ -589,8 +589,8 @@ export default function Home() {
       <footer className="bg-background border-t border-border py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <div className="bg-[#FF6600] text-white font-bold text-[22px] rounded flex items-center justify-center w-8 h-8 select-none pb-0.5" style={{ fontFamily: '"Arimo", sans-serif', letterSpacing: '-0.02em' }}>
-              Y
+            <div className="bg-[#FF6600] text-white font-bold text-[20px] rounded flex items-center justify-center w-8 h-8 select-none pb-0.5" style={{ fontFamily: '"Arimo", sans-serif', letterSpacing: '-0.05em' }}>
+              YC
             </div>
             <span className="font-semibold text-lg tracking-tight">Bench</span>
           </div>
