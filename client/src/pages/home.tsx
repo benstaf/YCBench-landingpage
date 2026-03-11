@@ -110,7 +110,7 @@ export default function Home() {
           </h1>
           
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            YC Bench is a live benchmark evaluating models that predict which Y Combinator startups will outperform their batch peers over the next 90 days.
+            YC Bench is a live benchmark evaluating forecasting models that predict which Y Combinator startups will outperform their batch peers over the next 90 days.
           </p>
 
           <Card className="max-w-xl mx-auto border border-border shadow-sm p-2 mb-8 bg-white/50 backdrop-blur-sm">
@@ -154,7 +154,7 @@ export default function Home() {
         {/* 2. YC Credibility Strip */}
         <section className="border-y border-border bg-secondary/50 py-4">
           <div className="max-w-6xl mx-auto px-4 flex flex-wrap justify-center gap-8 md:gap-16 text-sm font-mono text-muted-foreground uppercase tracking-wider">
-            <span>Built around Y Combinator batches</span>
+            <span>Built upon Y Combinator batches</span>
             <span className="hidden sm:inline">•</span>
             <span>Cohort-relative benchmarking</span>
             <span className="hidden sm:inline">•</span>
