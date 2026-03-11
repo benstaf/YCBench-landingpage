@@ -99,9 +99,13 @@ export default function Home() {
       <main className="pt-24 pb-0">
         {/* 1. Hero Section */}
         <section className="px-4 sm:px-6 lg:px-8 pt-16 pb-12 max-w-6xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/50 text-primary text-sm font-medium mb-8">
-            <Activity className="w-4 h-4" />
-            Live Benchmark - Startup Velocity
+          <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-foreground text-sm font-medium mb-8">
+            <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
+              <rect width="40" height="40" rx="4" fill="#FF6600"/>
+              <path d="M13 8L27 28H32L18 8H13Z" fill="white"/>
+              <path d="M27 8L13 28H8L22 8H27Z" fill="white"/>
+            </svg>
+            Built upon Y Combinator
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-6 max-w-4xl mx-auto leading-tight">
@@ -166,7 +170,7 @@ export default function Home() {
         <section className="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">The Core Insight</h2>
           <div className="prose prose-lg mx-auto text-muted-foreground space-y-6">
-            <p className="text-2xl text-foreground font-medium">Predicting startup success normally takes years.<br/>YC Bench makes it measurable in months.</p>
+            <p className="text-2xl text-foreground font-medium">Forecasting startup success normally takes years.<br/>YC Bench makes it measurable in months.</p>
             <p>
               Because Y Combinator startups launch in synchronized batches, they form natural peer cohorts. This allows models to measure relative execution and short-term outperformance, instead of waiting for distant outcomes like unicorns or exits.
             </p>
@@ -343,7 +347,7 @@ export default function Home() {
               {
                 step: "1",
                 title: "Models Predict",
-                desc: "Models predict which YC startups will outperform their batch peers in terms of velocity signals.",
+                desc: "Models forecast which YC startups will outperform their batch peers using short-term execution velocity signals.",
                 icon: <Target className="w-6 h-6 text-primary" />
               },
               {
