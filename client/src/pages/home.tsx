@@ -457,13 +457,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-12 text-center">Who is this for?</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card className="border-border">
-                <CardHeader>
-                  <Search className="w-8 h-8 text-primary mb-2" />
-                  <CardTitle>Researchers</CardTitle>
-                  <CardDescription>Study predictive signals in startup ecosystems.</CardDescription>
-                </CardHeader>
-              </Card>
+              
               <Card className="border-border">
                 <CardHeader>
                   <TrendingUp className="w-8 h-8 text-primary mb-2" />
@@ -476,6 +470,13 @@ export default function Home() {
                   <Rocket className="w-8 h-8 text-primary mb-2" />
                   <CardTitle>Founders</CardTitle>
                   <CardDescription>Benchmark company velocity relative to batch peers.</CardDescription>
+                </CardHeader>
+              </Card>
+              <Card className="border-border">
+                <CardHeader>
+                  <Search className="w-8 h-8 text-primary mb-2" />
+                  <CardTitle>Researchers</CardTitle>
+                  <CardDescription>Study predictive signals in startup ecosystems.</CardDescription>
                 </CardHeader>
               </Card>
             </div>
