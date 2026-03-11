@@ -19,6 +19,7 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { BuiltOnYCBadge } from "@/components/BuiltOnYCBadge";
 import {
   Card,
   CardContent,
@@ -99,13 +100,8 @@ export default function Home() {
       <main className="pt-24 pb-0">
         {/* 1. Hero Section */}
         <section className="px-4 sm:px-6 lg:px-8 pt-16 pb-12 max-w-6xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-foreground text-sm font-medium mb-8">
-            <svg width="20" height="20" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
-              <rect width="40" height="40" rx="4" fill="#FF6600"/>
-              <path d="M13 8L27 28H32L18 8H13Z" fill="white"/>
-              <path d="M27 8L13 28H8L22 8H27Z" fill="white"/>
-            </svg>
-            Built upon Y Combinator
+          <div className="mb-8 flex justify-center">
+            <BuiltOnYCBadge />
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-6 max-w-4xl mx-auto leading-tight">
