@@ -462,7 +462,7 @@ export default function Home() {
                 <CardHeader>
                   <TrendingUp className="w-8 h-8 text-primary mb-2" />
                   <CardTitle>Investors</CardTitle>
-                  <CardDescription>Identify emerging YC outliers early in the lifecycle. Access hot deals before Demo Day.</CardDescription>
+                  <CardDescription>Identify and access hot deals before Demo Day.</CardDescription>
                 </CardHeader>
               </Card>
               <Card className="border-border">
